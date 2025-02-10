@@ -1,0 +1,54 @@
+.env.development
+.env.production
+.venv
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env
+
+# Dependency directories
+pip-wheel-metadata/
+*.egg-info/
+dist/
+build/
+
+# Logs and databases
+*.log
+db.sqlite3
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Pytest cache
+.pytest_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Coverage reports
+.coverage
+htmlcov/
+*.cover
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+
+# Docker
+*.dockerignore
+docker-compose.override.yml
+
+# FastAPI specific
+instance/
+*.db
+
+# Security
+.env*
+secrets/
