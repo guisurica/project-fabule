@@ -4,11 +4,17 @@ class Result:
         self.message = message
         self.ok = ok
 
-    def ok_result(message: str, code: int):
-        return Result(code, message, True)
+    def ok_result(self, message: str, code: int):
+        self.code = code
+        self.message = message
+        self.ok = True
+        return self
 
-    def not_ok_result(message: str, code: int):
-        return Result(code, message, False)
+    def not_ok_result(self, message: str, code: int):
+        self.code = code
+        self.message = message
+        self.ok = False
+        return self
     
 
 

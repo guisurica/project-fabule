@@ -6,8 +6,8 @@ router = APIRouter()
 
 @router.post("/create")
 async def create(input: CreateTransactionDTO):
+    print(input)
     result = await create_transaction(input)
-    print(f"result {result.message}")
     if not result.ok:
         raise HTTPException(status_code=result.code, detail=result.message)
     return HTTPException(status_code=result.code, detail=result.message)
